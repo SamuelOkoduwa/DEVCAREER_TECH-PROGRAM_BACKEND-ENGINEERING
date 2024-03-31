@@ -1,7 +1,5 @@
 ###	Assignment A: 
 
-***
-
 I.	Create a single HTML page (remember what makes a page):	
 a.	Your page should have:
 	&nbsp;&nbsp;&nbsp;i.	Your name
@@ -32,5 +30,3 @@ Your page should not use the following tags:
 
 	b.	Your form should have a submit button
 	c.	Your form should have basic HTML Validation
-
-***
