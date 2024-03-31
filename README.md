@@ -30,7 +30,7 @@
 -	Basic Operators and Comparism Operators
 -	Conditonals and Loops
 -	Functions, Scopes and Closures
--	Basic Project
+-	Project
 
 ##	Data Structure, DOM, Events
 -	Arrays
