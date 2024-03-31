@@ -13,8 +13,7 @@ b.	Your page should use the following tags:
 	&nbsp;&nbsp;&nbsp;iv. \<h1> … \<h6>
 	&nbsp;&nbsp;&nbsp;v.	List
 
-c.	List
-Your page should not use the following tags:
+c.	Your page should not use the following tags:
 	&nbsp;&nbsp;&nbsp;i.	Table
 	&nbsp;&nbsp;&nbsp;ii.	Forms
 
