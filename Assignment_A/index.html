@@ -5,57 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Diploma Course Page</title>
+    <link rel="stylesheet" href="./style.css">
 
-	<style>
-
-		h1, h2{
-			text-align: center;
-		}
-
-		table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .form-container {
-            width: 50%;
-            margin: auto;
-        }
-
-        label,
-        input,
-        select,
-        textarea {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input[type="submit"] {
-            margin-top: 10px;
-        }
-
-        .error {
-            color: red;
-        }
-    </style>
 </head>
 <body>
+    
+    <header>
+        <div><a href="index.html">Home</a></div>
+        <div>
+            <span><a href="./table.html">Table</a></span>
+            <span><a href="./form.html">Form</a></span>
+        </div>
+    </header>
+
 	<h1>My Name: Samuel Okoduwa</h1>
+    <hr>
 
 	<p>
 		<b>About Me:</b>
 		I am passionate about web development and love exploring new technologies.
 	</p>
+    <hr>
 
     <p>
 		<b>Goal for this Diploma Course:</b> My goal is to gain a comprehensive understanding of Software design principles
@@ -74,89 +44,8 @@
     </ul>
 <hr />
 
-	<h2>Alphabet Table</h2>
-    <table>
-        <tr>
-            <th>A</th>
-            <th>B</th>
-            <th>C</th>
-            <th>D</th>
-            <th>E</th>
-            <th>F</th>
-            <th>G</th>
-            <th>H</th>
-            <th>I</th>
-            <th>J</th>
-            <th>K</th>
-            <th>L</th>
-            <th>M</th>
-            <th>N</th>
-            <th>O</th>
-            <th>P</th>
-            <th>Q</th>
-            <th>R</th>
-            <th>S</th>
-            <th>T</th>
-            <th>U</th>
-            <th>V</th>
-            <th>W</th>
-            <th>X</th>
-            <th>Y</th>
-            <th>Z</th>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
-            <td>F</td>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-            <td>J</td>
-            <td>K</td>
-            <td>L</td>
-            <td>M</td>
-            <td>N</td>
-            <td>O</td>
-            <td>P</td>
-            <td>Q</td>
-            <td>R</td>
-            <td>S</td>
-            <td>T</td>
-            <td>U</td>
-            <td>V</td>
-            <td>W</td>
-            <td>X</td>
-            <td>Y</td>
-            <td>Z</td>
-        </tr>
-    </table>
-	<hr>
 
-	<h2>Contact Us</h2>
-    <div class="form-container">
-        <form id="contactForm" action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <label for="priority">Priority:</label>
-            <select id="priority" name="priority" required>
-                <option value="">Select Priority</option>
-                <option value="high">High</option>
-                <option value="medium">Medium</option>
-                <option value="low">Low</option>
-            </select>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+	
 </body>
 </html>
