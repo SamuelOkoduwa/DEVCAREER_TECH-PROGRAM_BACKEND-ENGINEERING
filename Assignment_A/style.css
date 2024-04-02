@@ -39,7 +39,7 @@ input[type="submit"] {
 	color: red;
 }
 
-header {
+nav {
 	display: flex;
 	justify-content: 
 	space-between;
@@ -48,4 +48,9 @@ a {
 	text-decoration: none;
 	font-weight: bolder;
 	color: black;
+}
+
+#form-table{
+	display: flex; 
+	gap: 20px;
 }
