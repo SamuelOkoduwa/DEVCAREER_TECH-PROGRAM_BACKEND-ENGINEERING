@@ -1,0 +1,51 @@
+
+h1, h2{
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+.form-container {
+	width: 50%;
+	margin: auto;
+}
+
+label,
+input,
+select,
+textarea {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	margin-top: 10px;
+}
+
+.error {
+	color: red;
+}
+
+header {
+	display: flex;
+	justify-content: 
+	space-between;
+}
+a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
