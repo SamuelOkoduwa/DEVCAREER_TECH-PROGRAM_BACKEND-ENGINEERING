@@ -26,12 +26,11 @@
         <form id="contactForm" action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
+            <br>
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
 
             <label for="priority">Priority:</label>
             <select id="priority" name="priority" required>
@@ -40,8 +39,13 @@
                 <option value="medium">Medium</option>
                 <option value="low">Low</option>
             </select>
+            <br>
 
-            <input type="submit" value="Submit">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+
         </form>
     </div>
 </body>
