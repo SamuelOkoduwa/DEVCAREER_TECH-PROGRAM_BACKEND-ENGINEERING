@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>REDACTR</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="./app.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Redactor</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
 </head>
 <body>
-	<main class="container">
-		<h1>RedActr -Scramble Text</h1>
-	<form id="reactrForm">
-		<label for="originalText">Original Text:</label><br>
-        <textarea id="originalText" name="originalText" rows="5" cols="50"></textarea><br>
-        <label for="wordsToRedact">Words to Redact:</label><br>
-        <input type="text" id="wordsToRedact" name="wordsToRedact"><br>
-        <label for="replaceChar">Replacement Character:</label><br>
-        <input type="text" id="replaceChar" name="replaceChar" value="*"><br>
-        <button type="button" id="redactBtn">Redact Now</button>
-	</form>
-	</main>
+  <h1>Text Redactor</h1>
+  <form id="redactForm">
+    <label for="originalText">Original Text:</label>
+    <textarea id="originalText" rows="6" cols="50"></textarea>
+    <label for="wordsToRedact">Words to Redact (separated by space):</label>
+    <input type="text" id="wordsToRedact" name="wordsToRedact">
+    <button type="button" onclick="redactText()">Redact Now</button>
+  </form>
+
+  <div id="redactedText"></div>
 </body>
 </html>
