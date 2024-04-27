@@ -1,0 +1,16 @@
+{
+  "name": "assignment_d",
+  "version": "1.0.0",
+  "description": "Set up a new nodejs project and do the following:\r &nbsp;&nbsp;&nbsp;1.\tCreate a new server (i.e index.js)\r &nbsp;&nbsp;&nbsp;2. Establish the following routes (no libraries/frameworks allowed) inside index.js using the specified method:\r \t&nbsp;&nbsp;&nbsp;a.\tUsers:\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.\tCreateUser - POST\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.\tAuthenticateUser - POST\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. getAllUsers - GET\r \t&nbsp;&nbsp;&nbsp;b.\tBooks:\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.\tCreate - POST\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.\tDelete - DELETE\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.LoanOut - POST/PUT\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv.\tReturn - POST\r \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v.\tUpdate - PUT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
