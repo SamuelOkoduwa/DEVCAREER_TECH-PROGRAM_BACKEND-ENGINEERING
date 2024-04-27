@@ -1,43 +1,61 @@
 const http = require('http');
 const fs = require('fs');
 
-// create a server
-const server = http.createServer((req, res)=>{
-	// Setting response headers
-	res.setHeader('Content-Type', 'application/json');
-	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-	res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+// File paths for storing user and book data
+const usersFilePath = './users.json';
+const booksFilePath = './books.json';
 
-	// Route for creating users
-	if (req.method === 'POST' && req.url === '/users/CreateUser'){
-		let body = '';
-		req.on('data', (chunk)=>{
-			body += chunk.toString();
-		});
-		req.on('end', ()=>{
-			const credentials = JSON.parse(body);
-			const users = readDataFromFile(userFilePath);
-			const user = users.find(u => u.username === credentials.username && u.password === credentials.password);
-			if (user){
-				res.end(JSON.stringify({ message: 'Authentication successful', user}))
-			} else {
-				res.statusCode = 401;
-				res.end(JSON.stringify({ message: 'Authentication failed' }))
-			}
-		})
+// Helper function to read data from a file
+function readDataFromFile(filePath) {
+    try {
+        const data = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(data);
+    } catch (err) {
+        console.error(`Error reading data from ${filePath}:`, err);
+        return [];
+    }
+}
 
-		// Route to get all users
-		
+// Helper function to write data to a file
+function writeDataToFile(filePath, data) {
+    try {
+        fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
+    } catch (err) {
+        console.error(`Error writing data to ${filePath}:`, err);
+    }
+}
 
-	}
-	
-})
+// Create a new HTTP server
+const server = http.createServer((req, res) => {
+    // Set response headers
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-// start the server
+    // Route for exporting users data
+    if (req.method === 'GET' && req.url === '/export/users') {
+        const users = readDataFromFile(usersFilePath);
+        res.setHeader('Content-Disposition', 'attachment; filename=users.json');
+        res.end(JSON.stringify(users));
+    }
+
+    // Route for exporting books data
+    else if (req.method === 'GET' && req.url === '/export/books') {
+        const books = readDataFromFile(booksFilePath);
+        res.setHeader('Content-Disposition', 'attachment; filename=books.json');
+        res.end(JSON.stringify(books));
+    }
+
+    // Handle invalid routes
+    else {
+        res.statusCode = 404;
+        res.end(JSON.stringify({ message: 'Route not found' }));
+    }
+});
+
+// Start the server
 const PORT = 3000;
-server.listen(PORT, ()=>{
-	console.log(`Server is running on http://localhost:${PORT}`)
-})
-
-
+server.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+});
