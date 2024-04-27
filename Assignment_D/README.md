@@ -24,3 +24,11 @@ Time: 11:59 PM (WAT).
 Submission link: [here.](https://forms.gle/qgoybfEQzYTexSDK6)**
 
 ***
+
+###	Access Export Links:
+To access the export links (/export/users and /export/books), you can use your browser and navigate to:
+http://localhost:3000/export/users for exporting users data.
+http://localhost:3000/export/books for exporting books data.
+These links will trigger the download of JSON files containing users and books data.
+
+***
