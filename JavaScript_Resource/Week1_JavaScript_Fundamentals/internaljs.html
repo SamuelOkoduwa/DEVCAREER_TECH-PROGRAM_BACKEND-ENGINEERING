@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline JavaScript</title>
+</head>
+<body>  
+    <button>Click Me</button>
+
+    <script>
+        //Get access to the button
+        const button = document.querySelector('button');
+
+        //Add event listener to the button
+        button.addEventListener('click', showMyName);
+
+        //Function to show my name
+        function showMyName() {
+            alert('My name is Yemi');
+        }
+
+    </script>
+  
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password Page</title>
+  </head>
+  <body>
+    <% if (error) { %>
+    <p><%= error %></p>
+    <% } %>
+
+    <% if (success) { %>
+    <p><%= success %></p>
+    <% } %>
+
+    <form action="/reset" method="post">
+      <!-- user input-->
+      <p>Username</p>
+      <input type="text" name="username" placeholder="Username" required />
+      <br /><br />
+      <p>Password</p>
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      /><br /><br />
+      <p>New Password</p>
+      <input
+        type="password"
+        name="new_password"
+        placeholder="New Password"
+        required
+      /><br /><br />
+      <!-- submit button -->
+      <button type="submit">Reset Password</button> <a href="/login">Login</a>
+    </form>
+  </body>
+</html>

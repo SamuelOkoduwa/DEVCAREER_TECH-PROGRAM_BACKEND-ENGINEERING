@@ -1,0 +1,11 @@
+{
+  "name": "new_package",
+  "version": "1.0.0",
+  "description": "This is test package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rising Odegua",
+  "license": "ISC"
+}

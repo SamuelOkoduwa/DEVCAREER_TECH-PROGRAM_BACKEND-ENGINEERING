@@ -1,0 +1,14 @@
+{
+  "name": "external_package",
+  "version": "1.0.0",
+  "description": "This is a math application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rising Odegua",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^10.1.1"
+  }
+}
