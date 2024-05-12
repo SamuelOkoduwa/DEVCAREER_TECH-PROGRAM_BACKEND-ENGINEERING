@@ -22,7 +22,8 @@
 -	CSS Variables
 -	CSS Layout (Flexbox and Grid)
 -	CSS Media Queries
--	CSS Animations	
+-	CSS Animations
+-	[Project](./Assignment_B/)
 
 ##	Introduction to JavaScript
 -	Fundamentals of JavaScript
@@ -30,7 +31,8 @@
 -	Basic Operators and Comparism Operators
 -	Conditonals and Loops
 -	Functions, Scopes and Closures
--	Project
+-	[Practice Resource](./JavaScript_Resource/Week1_JavaScript_Fundamentals/)
+-	[Project](./1.validation_project/)
 
 ##	Data Structure, DOM, Events
 -	Arrays
@@ -46,6 +48,9 @@
 -	Event Listiners and Event Object
 -	UI Events	
 -	Async/Await and Promises
+-	[Practice Resource 1](./JavaScript_Resource/Week2_DataStructure_DOM_Events/)
+-	[Practice Resource 2](./JavaScript_Resource/Week3_Asychronous/)
+-	[Project](./Assignment_C/)
 
 ##	Object-oriented programming (OOP)
 -	Introduction to Object Oriented Programing
@@ -59,6 +64,8 @@
 -	NodeJs: Installation and Setup
 -	Running scripts on the NodeJs
 -	Package Manager and Local Modules
+-	[Practice Resource](./JavaScript_Resource/NodsJs_Intro_and_Simple_Server/)
+-	[Project](./Assignment_D/)
 
 ##	NodeJs Core
 -	Event Loop
@@ -68,6 +75,7 @@
 -	Creating a simple server
 -	Routing in servers
 -	Server Methods
+-	[Practice Resource](./JavaScript_Resource/NodsJs_Intro_and_Simple_Server/)
 
 ##	Application Programming Interfaces(APIs)
 -	Introduction to Application Programming Interfaces(API)
@@ -76,6 +84,7 @@
 -	Dealing with Cores
 -	Test Driven Development and Testing out API Servers
 
+
 ##	NodeJs Frameworks
 -	Nodejs frameworks and Introduction to ExpressJs
 -	Core Concepts in ExpressJs
@@ -83,6 +92,7 @@
 -	Express Router
 -	Views in ExpressJs
 -	Error Handling in ExpressJs
+-	[Practice Resource]()
 
 ##	Databases
 -	Introduction to Databases
