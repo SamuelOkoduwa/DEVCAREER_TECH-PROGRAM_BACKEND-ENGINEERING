@@ -92,7 +92,7 @@
 -	Express Router
 -	Views in ExpressJs
 -	Error Handling in ExpressJs
--	[Practice Resource]()
+-	[Practice Resource](./JavaScript_Resource/NodsJs_Intro_and_Simple_Server/)
 
 ##	Databases
 -	Introduction to Databases
@@ -104,6 +104,7 @@
 -	Index Types
 -	Migration and Seed
 -	ACID Principle and Transactions
+-	[Practice Resource](./JavaScript_Resource/Month2/Week1&2/)
 
 ##	Authentification and Authorization
 -	Introduction to Authentication and Authorization
@@ -115,3 +116,4 @@
 -	Using the OAuth 2.0 protocol
 -	Authentication and authorization- Best Practices
 -	Third-party authentication services with Auth0
+-	[Practice Resource](./JavaScript_Resource/Month3/)
